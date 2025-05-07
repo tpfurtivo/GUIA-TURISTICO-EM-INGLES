@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rio de Janeiro Travel Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1195351395195824');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1195351395195824&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+  /* ... (todo o CSS permanece igual) ... */
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Rio de Janeiro Travel Guide</h1>
+  <p class="subtitle">Explore the most amazing tourist spots, discover the local culture, and plan your trip with safety and ease. This guide is your best companion in the Marvelous City.</p>
+  <img src="mockup-guia-rio.png" alt="Guide Mockup" class="mockup">
+
+  <div style="text-align: left; max-width: 900px; margin: 40px auto 20px; font-size: 18px; line-height: 1.6;">
+    <h2 style="color:#1565c0; text-align: center;">You're about to explore one of the most incredible destinations in the world — and your best travel companion is right here!</h2>
+    <p>This guide was made for those who want to:</p>
+    <ul>
+      <li>✔️ Make the most of Rio with safety and smart planning.</li>
+      <li>✔️ Discover the best tours, beaches, restaurants, and attractions.</li>
+      <li>✔️ Have ready-to-use itineraries by region and by day.</li>
+      <li>✔️ Save time and money with local and accessible tips.</li>
+      <li>✔️ Experience Rio authentically, like a true local.</li>
+    </ul>
+    <p><strong>Why choose this guide?</strong></p>
+    <ul>
+      <li>✅ 100% updated content</li>
+      <li>✅ Written by someone who deeply knows Rio</li>
+      <li>✅ Ideal for solo travelers, couples, families, and backpackers</li>
+      <li>✅ Light, clear, and practical design</li>
+    </ul>
+    <p>📲 Available in digital format for phone, tablet, or print. Take it with you anywhere!</p>
+  </div>
+
+  <h2 style="color: #d32f2f;">Special Offer!</h2>
+  <p><strong style="color:green;">From R$ 67.00</strong> for only <strong style="color:red;">R$ 29.90</strong></p>
+
+  <a href="#comprar" style="text-decoration: none;">
+  <div style="background-color: #d32f2f; color: white; font-size: 28px; padding: 15px; border-radius: 8px; margin: 20px 0; font-weight: bold; animation: piscar 1.2s infinite;">
+    ⏳ Offer ends in: <span id="contador">15:00</span>
+  </div>
+</a>
+
+<div style="text-align: center; margin-top: 40px; font-size: 18px;">
+  ✔️ <strong>7-Day Guarantee</strong> |
+  ✔️ <strong>Secure Payment</strong> |
+  ✔️ <strong>Instant Access</strong>
+</div>
+
+<p style="color: red; font-weight: bold; margin-top: 40px;">⚠️ Limited-time promotion! Price will return to normal soon.</p>
+<a href="https://pay.kiwify.com.br/j6pZaq7" class="botao-comprar" id="comprar">Buy Now</a>
+
+<div style="margin-top: 20px; display: flex; justify-content: center;">
+  <img src="SEGURANCA.png" alt="Trust Seals" style="max-width: 500px; height: auto;">
+</div>
+
+<a href="#comprar" class="botao-flutuante">Buy Now</a>
+
+<footer>
+  <p>&copy; 2025 Rio Travel Guide - All rights reserved</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let tempo = 15 * 60;
+    function atualizarContador() {
+      const minutos = Math.floor(tempo / 60);
+      const segundos = tempo % 60;
+      const formatado = `${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+      document.getElementById("contador").textContent = formatado;
+      if (tempo > 0) {
+        tempo--;
+        setTimeout(atualizarContador, 1000);
+      }
+    }
+    atualizarContador();
+  });
+</script>
+
+</div>
+</body>
+</html>
